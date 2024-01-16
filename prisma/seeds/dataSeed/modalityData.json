@@ -1,0 +1,63 @@
+[
+    {
+      "id": "901",
+      "name": "Educação Básica - Tempo Parcial",
+      "description": "O ensino regular é a educação padrão, com currículo fixo, avaliações regulares e presença na sala de aula."
+    },
+    {
+      "id": "902",
+      "name": "Centro de AEE",
+      "description": "O ensino integral envolve dias escolares mais longos, com atividades acadêmicas e extracurriculares integradas."
+    },
+    {
+      "id": "903",
+      "name": "Educação Indígena e Quilombola - Tempo Parcial",
+      "description": "O ensino integral envolve dias escolares mais longos, com atividades acadêmicas e extracurriculares integradas."
+    },
+    {
+      "id": "904",
+      "name": "Educação Indígena - Tempo Integral",
+      "description": "O ensino híbrido combina aulas presenciais na escola com aprendizado online."
+    },
+    {
+      "id": "905",
+      "name": "Educação Indígena - Creches ",
+      "description": "O ensino indígena é uma educação que valoriza as culturas e línguas indígenas, adaptada às comunidades nativas."
+    },
+    {
+      "id": "906",
+      "name": "EJA",
+      "description": "A EJA é uma modalidade de ensino flexível para adultos que desejam concluir o ensino fundamental ou médio."
+    },
+    {
+      "id": "907",
+      "name": "pALei 9h",
+      "description": "A educação especial é uma educação adaptada para alunos com necessidades especiais, físicas ou mentais."
+    },
+    {
+      "id": "908",
+      "name": "pALei 9h + Tempo parcial manhã",
+      "description": "A educação especial é uma educação adaptada para alunos com necessidades especiais, físicas ou mentais."
+    },
+    {
+      "id": "909",
+      "name": "pALei 9h + Tempo parcial tarde",
+      "description": "A educação especial é uma educação adaptada para alunos com necessidades especiais, físicas ou mentais."
+    },
+    {
+      "id": "910",
+      "name": "pALei 9h + Tempo parcial manhã e tarde",
+      "description": "A educação especial é uma educação adaptada para alunos com necessidades especiais, físicas ou mentais."
+    },
+    {
+      "id": "911",
+      "name": "pALei 7h - Manhã",
+      "description": "A educação especial é uma educação adaptada para alunos com necessidades especiais, físicas ou mentais."
+    },
+    {
+      "id": "912",
+      "name": "pALei 7h - Tarde",
+      "description": "A educação especial é uma educação adaptada para alunos com necessidades especiais, físicas ou mentais."
+    }
+  ]
+  

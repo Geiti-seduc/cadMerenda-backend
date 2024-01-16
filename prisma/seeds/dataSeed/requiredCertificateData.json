@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "name": "CND MUNICIPAL"
+    },
+    {
+        "id": "2",
+        "name": "CND ESTADUAL"
+    },
+    {
+        "id": "3",
+        "name": "CND FEDERAL"
+    },
+    {
+        "id": "4",
+        "name": "CND TRABALHISTA"
+    },
+    {
+        "id": "5",
+        "name": "CND FGTS"
+    }
+]

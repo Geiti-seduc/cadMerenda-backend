@@ -1,0 +1,57 @@
+[
+    {
+      "id": "1001",
+      "total_price": 15.5,
+      "supplier_id": "101",
+      "cycle_id": "48624"
+    },
+    {
+      "id": "1002",
+      "total_price": 18.3,
+      "supplier_id": "101",
+      "cycle_id": "48624"
+    },
+    {
+      "id": "1003",
+      "total_price": 18.3,
+      "supplier_id": "101",
+      "cycle_id": "48624"
+    },
+    {
+      "id": "1004",
+      "total_price": 14.9,
+      "supplier_id": "102",
+      "cycle_id": "48624"
+    },
+    {
+      "id": "1005",
+      "total_price": 14.9,
+      "supplier_id": "102",
+      "cycle_id": "48624"
+    },
+    {
+      "id": "1006",
+      "total_price": 14.9,
+      "supplier_id": "102",
+      "cycle_id": "48624"
+    },
+    {
+      "id": "1007",
+      "total_price": 14.5,
+      "supplier_id": "103",
+      "cycle_id": "48624"
+    },
+    {
+      "id": "1008",
+      "total_price": 14.5,
+      "supplier_id": "103",
+      "cycle_id": "48624"
+    },
+    {
+      "id": "1009",
+      "total_price": 14.5,
+      "supplier_id": "103",
+      "cycle_id": "48624"
+    }
+  ]
+  

@@ -1,0 +1,318 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String        @id
+  email       String        @unique
+  name        String
+  password    String
+  role        String
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  lastLogin   String
+  active      Boolean       @default(true)
+  access      Access[]
+  Certificate Certificate[]
+  Logs        Logs[]
+  school_user School_User[]
+  supplier    Supplier[]
+}
+
+model Logs {
+  id          String   @id @default(uuid())
+  table       String
+  column      String
+  operation   String
+  oldValue    String?
+  newValue    String?
+  userId      String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  referenceId String
+  User        User     @relation(fields: [userId], references: [id])
+
+  @@index([userId], map: "Logs_userId_fkey")
+}
+
+model Address {
+  id                  String     @id @default(uuid())
+  zip                 String
+  street              String
+  number              String
+  complement          String?
+  district            String
+  city                String
+  state               String
+  immediate_region    String?
+  intermediate_region String?
+  createdAt           DateTime   @default(now())
+  updatedAt           DateTime   @updatedAt
+  gees                Gee[]
+  School              School[]
+  suppliers           Supplier[]
+}
+
+model Supplier {
+  id                 String   @id @default(uuid())
+  cnpj               String   @unique
+  nire               String?   @unique
+  company_name       String
+  trade_name         String
+  state_registration String   @unique
+  cnae               String
+  phone              String
+  email              String
+  tech_manager       String
+  status             String?
+  user_id            String
+  address_id         String
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  orffers            Offer[]
+  address            Address  @relation(fields: [address_id], references: [id])
+  user               User     @relation(fields: [user_id], references: [id])
+
+  @@index([address_id], map: "Supplier_address_id_fkey")
+  @@index([user_id], map: "Supplier_user_id_fkey")
+}
+
+model Required_Certificates {
+  id           String        @id @default(uuid())
+  name         String        @unique
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  certificates Certificate[]
+}
+
+model Certificate {
+  id                      String                @id @default(uuid())
+  user_id                 String
+  required_certificate_id String
+  expiration              DateTime
+  archive                 String
+  createdAt               DateTime              @default(now())
+  updatedAt               DateTime              @updatedAt
+  req_certificate         Required_Certificates @relation(fields: [required_certificate_id], references: [id])
+  user                    User                  @relation(fields: [user_id], references: [id])
+
+  @@index([user_id], map: "Certificate_user_id_fkey")
+  @@index([required_certificate_id], map: "Certificate_required_certificate_id_fkey")
+}
+
+model School {
+  inep        String        @id
+  name        String
+  cnpj        String
+  phone       String
+  email       String
+  addressId   String
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  geeId       String
+  orders      Order[]
+  Address     Address       @relation(fields: [addressId], references: [id])
+  Gee         Gee           @relation(fields: [geeId], references: [id])
+  school_user School_User[]
+
+  @@index([geeId], map: "School_geeId_fkey")
+  @@index([addressId], map: "School_addressId_fkey")
+}
+
+model School_User {
+  id          String   @id @default(uuid())
+  role        String
+  school_inep String
+  user_id     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  school      School   @relation(fields: [school_inep], references: [inep])
+  user        User     @relation(fields: [user_id], references: [id])
+
+  @@index([school_inep], map: "School_User_school_inep_fkey")
+  @@index([user_id], map: "School_User_user_id_fkey")
+}
+
+model Gee {
+  id         String   @id @default(uuid())
+  name       String
+  address_id String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  adress     Address  @relation(fields: [address_id], references: [id])
+  schools    School[]
+
+  @@index([address_id], map: "Gee_address_id_fkey")
+}
+
+model Order {
+  id                 String               @id @default(uuid())
+  school_inep        String
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  general_list_id    String
+  cycle_id           String
+  general_list       General_List         @relation(fields: [general_list_id], references: [id])
+  cycle              Cycle                @relation(fields: [cycle_id], references: [id])
+  school             School               @relation(fields: [school_inep], references: [inep])
+  requested_products Requested_Products[]
+  total_order        Total_Order[]
+
+  @@index([school_inep], map: "Order_school_inep_fkey")
+  @@index([cycle_id], map: "Order_cycle_id_fkey")
+}
+
+model Requested_Products {
+  id        String   @id @default(uuid())
+  quantity  Int
+  frequency String
+  order_id  String
+  food_id   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  food      Food     @relation(fields: [food_id], references: [id])
+  order     Order    @relation(fields: [order_id], references: [id])
+
+  @@index([food_id], map: "Requested_Products_food_id_fkey")
+  @@index([order_id], map: "Requested_Products_order_id_fkey")
+}
+
+model Total_Order {
+  id        String   @id @default(uuid())
+  order_id  String
+  offer_id  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  order     Order    @relation(fields: [order_id], references: [id])
+  offer     Offer    @relation(fields: [offer_id], references: [id])
+
+}
+
+model Offer {
+  id               String             @id @default(uuid())
+  total_price      Float
+  supplier_id      String
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  cycle_id         String
+  cycle            Cycle              @relation(fields: [cycle_id], references: [id])
+  supplier         Supplier           @relation(fields: [supplier_id], references: [id])
+  offered_products Offered_Products[]
+  total_order      Total_Order[]
+
+  @@index([supplier_id], map: "Offer_supplier_id_fkey")
+  @@index([cycle_id], map: "Offer_cycle_id_fkey")
+}
+
+model Offered_Products {
+  id            String   @id @default(uuid())
+  quantity      Int
+  frequency     String
+  product_price Float
+  offer_id      String
+  food_id       String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  brand         String
+  food          Food     @relation(fields: [food_id], references: [id])
+  offer         Offer    @relation(fields: [offer_id], references: [id])
+
+  @@index([food_id], map: "Offered_Products_food_id_fkey")
+  @@index([offer_id], map: "Offered_Products_offer_id_fkey")
+}
+
+model Food {
+  id                 String               @id @default(uuid())
+  name               String
+  description        String?
+  measure            String
+  category           String
+  nmc                Int
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  general_list_food  General_List_Food[]
+  offered_products   Offered_Products[]
+  requested_products Requested_Products[]
+}
+
+model General_List {
+  id                String              @id @default(uuid())
+  cycle_id          String
+  description       String?
+  modality_id       String
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  cycle             Cycle               @relation(fields: [cycle_id], references: [id])
+  modality          Modality            @relation(fields: [modality_id], references: [id])
+  general_list_food General_List_Food[]
+  order             Order[]
+
+  @@index([cycle_id], map: "General_List_cycle_id_fkey")
+  @@index([modality_id], map: "General_List_modality_id_fkey")
+}
+
+model General_List_Food {
+  id              String       @id @default(uuid())
+  food_id         String
+  general_list_id String
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  food            Food         @relation(fields: [food_id], references: [id])
+  general_list    General_List @relation(fields: [general_list_id], references: [id])
+
+  @@index([food_id], map: "General_List_Food_food_id_fkey")
+  @@index([general_list_id], map: "General_List_Food_general_list_id_fkey")
+}
+
+model Modality {
+  id              String            @id @default(uuid())
+  name            String
+  description     String?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  general_list    General_List[]
+  school_modality School_Modality[]
+}
+
+model School_Modality {
+  id          String   @id @default(uuid())
+  school_inep String
+  modality_id String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  modality    Modality @relation(fields: [modality_id], references: [id])
+
+  @@index([modality_id], map: "School_Modality_modality_id_fkey")
+  @@index([school_inep], map: "School_Modality_school_inep_fkey")
+}
+
+model Access {
+  id        String   @id @default(uuid())
+  user_id   String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [user_id], references: [id])
+
+  @@index([user_id], map: "Access_user_id_fkey")
+}
+
+model Cycle {
+  id                     String         @id @default(uuid())
+  startNutri             DateTime
+  deadlineNutri          DateTime
+  startSchool            DateTime
+  deadlineSchool         DateTime
+  startSupplier          DateTime
+  deadlineSupplier       DateTime
+  initSelectSupplier     DateTime
+  deadlineSelectSupplier DateTime
+  createdAt              DateTime       @default(now())
+  updatedAt              DateTime       @updatedAt
+  General_List           General_List[]
+  Offer                  Offer[]
+  Order                  Order[]
+}

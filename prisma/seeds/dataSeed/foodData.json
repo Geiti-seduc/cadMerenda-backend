@@ -1,0 +1,98 @@
+[
+    {
+        "id": "301",
+        "name": "Açúcar",
+        "description": "refinado",
+        "measure": "KG",
+        "category": "Açúcar e doces",
+        "nmc": 12345678
+    },
+    {
+        "id": "302",
+        "name": "Sal",
+        "description": "refinado",
+        "measure": "KG",
+        "category": "Sal e condimentos",
+        "nmc": 12345679
+    },
+    {
+        "id": "303",
+        "name": "Óleo",
+        "description": "de soja",
+        "measure": "LT",
+        "category": "Óleos e gorduras",
+        "nmc": 12345610
+    },
+    {
+        "id": "304",
+        "name": "Arroz",
+        "description": "parboilizado",
+        "measure": "KG",
+        "category": "Cereais",
+        "nmc": 12345611
+    },
+    {
+        "id": "305",
+        "name": "Feijão",
+        "description": "carioca",
+        "measure": "KG",
+        "category": "Leguminosas",
+        "nmc": 12345612
+    },
+    {
+        "id": "306",
+        "name": "Macarrão",
+        "description": "espaguete",
+        "measure": "KG",
+        "category": "Massas",
+        "nmc": 12345613
+    },
+    {
+        "id": "307",
+        "name": "Pão",
+        "description": "francês",
+        "measure": "KG",
+        "category": "Cereais",
+        "nmc": 12345614
+    },
+    {
+        "id": "308",
+        "name": "Leite",
+        "description": "integral",
+        "measure": "LT",
+        "category": "Laticínios",
+        "nmc": 12345615
+    },
+    {
+        "id": "309",
+        "name": "Carne",
+        "description": "bovina",
+        "measure": "KG",
+        "category": "Carnes",
+        "nmc": 12345616
+    },
+    {
+        "id": "310",
+        "name": "Ovo",
+        "description": "de galinha",
+        "measure": "UN",
+        "category": "Ovos",
+        "nmc": 12345617
+    },
+    {
+        "id": "311",
+        "name": "Frango",
+        "description": "inteiro",
+        "measure": "KG",
+        "category": "Carnes",
+        "nmc": 12345618
+    },
+    {
+        "id": "312",
+        "name": "Peixe",
+        "description": "inteiro",
+        "measure": "KG",
+        "category": "Carnes",
+        "nmc": 12345619
+    }
+]

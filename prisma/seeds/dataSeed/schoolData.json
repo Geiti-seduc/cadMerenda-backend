@@ -1,0 +1,47 @@
+[
+    {
+        "inep": "27036782",
+        "name": "ESCOLA ESTADUAL MOREIRA E SILVA",
+        "cnpj": "2324568784562",
+        "phone": "9545784521",
+        "email": "escola1@gmail.com",
+        "addressId": "22",
+        "geeId": "413"
+    },
+    {
+        "inep": "27036960",
+        "name": "ESCOLA ESTADUAL PRINCESA ISABEL",
+        "cnpj": "11547842154",
+        "phone": "5487546254",
+        "email": "escolab@gmail.com",
+        "addressId": "22",
+        "geeId": "413"
+    },
+    {
+        "inep": "27036731",
+        "name": "ESCOLA ESTADUAL JOSE CORREIA DA SILVA TITARA",
+        "cnpj": "145478456577",
+        "phone": "3454874554",
+        "email": "escolac@gmail.com",
+        "addressId": "22",
+        "geeId": "413"
+    },
+    {
+        "inep": "27036987",
+        "name": "ESCOLA ESTADUAL PROF JOSE DA SILVEIRA CAMERINO",
+        "cnpj": "145478456577",
+        "phone": "8233151406",
+        "email": "escolad@gmail.com",
+        "addressId": "22",
+        "geeId": "413"
+    },
+    {
+        "inep": "27026337",
+        "name": "ESCOLA ESTADUAL FLORIANO PEIXOTO",
+        "cnpj": "145478456577",
+        "phone": "8232641112",
+        "email": "floriano@peixoto.com",
+        "addressId": "13",
+        "geeId": "404"
+    }
+]

@@ -1,0 +1,2 @@
+nire: adicionar campo
+status: armazenar no banco

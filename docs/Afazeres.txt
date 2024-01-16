@@ -1,0 +1,15 @@
+Afazeres
+
+- criação de pedido:
+	- id
+	- inep
+	- id da pauta
+
+- retorna:
+	- id
+	- inep
+	- id da pauta
+	- produtos pedidos:
+		- pedidos
+
+- retornar penúltimo ciclo

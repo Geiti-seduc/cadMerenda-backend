@@ -1,0 +1,86 @@
+[
+    {
+        "id": "2001",
+        "quantity": 2,
+        "order_id": "601",
+        "food_id": "301",
+        "frequency": "Semanal"
+    },
+    {
+        "id": "2002",
+        "quantity": 3,
+        "order_id": "601",
+        "food_id": "302",
+        "frequency": "Mensal"
+    },
+    {
+        "id": "2003",
+        "quantity": 5,
+        "order_id": "601",
+        "food_id": "303",
+        "frequency": "Quinzenal"
+    },
+    {
+        "id": "2004",
+        "quantity": 3,
+        "order_id": "602",
+        "food_id": "301",
+        "frequency": "Diária"
+    },
+    {
+        "id": "2005",
+        "quantity": 5,
+        "order_id": "602",
+        "food_id": "302",
+        "frequency": "Semanal"
+    },
+    {
+        "id": "2006",
+        "quantity": 6,
+        "order_id": "602",
+        "food_id": "303",
+        "frequency": "Mensal"
+    },
+    {
+        "id": "2007",
+        "quantity": 1,
+        "order_id": "603",
+        "food_id": "301",
+        "frequency": "Diária"
+    },
+    {
+        "id": "2008",
+        "quantity": 2,
+        "order_id": "603",
+        "food_id": "302",
+        "frequency": "Quinzenal"
+    },
+    {
+        "id": "2009",
+        "quantity": 4,
+        "order_id": "603",
+        "food_id": "303",
+        "frequency": "Semanal"
+    },
+    {
+        "id": "2010",
+        "quantity": 3,
+        "order_id": "604",
+        "food_id": "301",
+        "frequency": "Mensal"
+    },
+    {
+        "id": "2011",
+        "quantity": 3,
+        "order_id": "604",
+        "food_id": "302",
+        "frequency": "Diária"
+    },
+    {
+        "id": "2012",
+        "quantity": 6,
+        "order_id": "604",
+        "food_id": "303",
+        "frequency": "Quinzenal"
+    }
+]

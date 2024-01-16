@@ -1,0 +1,58 @@
+[
+    {
+        "id": "101",
+        "cnpj": "06.057.223/0001-71",
+        "nire": "35.300.158.659",
+        "company_name": "Assaí Atacadista",
+        "trade_name": "SENDAS DISTRIBUIDORA S/A",
+        "state_registration": "1",
+        "cnae": "47.11-3-02",
+        "phone": "3003-3030",
+        "email": "assaiatacadista@assai.com",
+        "tech_manager": "Rodolfo Jungi Nagai",
+        "user_id": "78412044741",
+        "address_id": "10"
+    },
+    {
+        "id": "102",
+        "cnpj": "01484794000179",
+        "nire": "35.300.158.660",
+        "company_name": "Palato",
+        "trade_name": "PALATO IND E COM DE PRODUTOS ALIMENTICIOS LTDA",
+        "state_registration": "2",
+        "cnae": "47.12-1-00",
+        "phone": "4004-7200",
+        "email": "sac@palato.com.br.",
+        "tech_manager": " Paulo Cabús e Susana Cabús",
+        "user_id": "45123654874",
+        "address_id": "22"
+    },
+    {
+        "id": "103",
+        "cnpj": "39.346.861/0163-27",
+        "nire": "35.300.158.661",
+        "company_name": "G BARBOSA",
+        "trade_name": "CENCOSUD BRASIL COMERCIAL S.A.",
+        "state_registration": "3",
+        "cnae": "47.11-3-02",
+        "phone": "0800-720-1111",
+        "email": "gbarbosa@gbarbosa.com",
+        "tech_manager": "Sebastian Dario Los",
+        "user_id": "69323545125",
+        "address_id": "15"
+    },
+    {
+        "id": "999",
+        "cnpj": "39.346.810/0110-20",
+        "nire": "35.300.158.662",
+        "company_name": "FORNECE PRA NINGUÉM",
+        "trade_name": "SÓ PARA TESTES",
+        "state_registration": "4",
+        "cnae": "47.11-3-00",
+        "phone": "0800-111-1111",
+        "email": "teste@kkk.com",
+        "tech_manager": "Sebastião Ovelha",
+        "user_id": "58721014569",
+        "address_id": "15"
+    }
+]

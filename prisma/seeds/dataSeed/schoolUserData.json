@@ -1,0 +1,38 @@
+[
+    {
+        "id": "6001",
+        "role": "Gestor",
+        "school_inep": "27036782",
+        "user_id": "10344544741"
+    },
+    {
+        "id": "6005",
+        "role": "Gestor",
+        "school_inep": "27036782",
+        "user_id": "90344534450"
+    },
+    {
+        "id": "6002",
+        "role": "Gestor",
+        "school_inep": "27036960",
+        "user_id": "12489657403"
+    },
+    {
+        "id": "6003",
+        "role": "Gestor",
+        "school_inep": "27036731",
+        "user_id": "23596552236"
+    },
+    {
+        "id": "6004",
+        "role": "Gestor",
+        "school_inep": "27036987",
+        "user_id": "63296548201"
+    },
+    {
+        "id": "6006",
+        "role": "Gestor",
+        "school_inep": "27036987",
+        "user_id": "63296548201"
+    }
+]

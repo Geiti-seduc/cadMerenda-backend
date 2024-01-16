@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Report Template</title>
+        <style>
+            html {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                font-size: 12px;
+            }
+            table {
+                border-collapse: collapse;
+                text-align: center;
+                vertical-align: center;
+                width: 100%;
+            }
+            td {
+                font-size: 0.8rem;
+                border-color: gray;
+                border-style: solid;
+                border-width: 1px;
+                padding: 10px 5px;
+            }
+
+            .supplier-header td {
+                padding-left: 10px;
+                text-align: left;
+                border-bottom: 0;
+                border-color: gray;
+                background-color: lightgray;
+            }
+
+            .items td {
+                border-top: 0;
+            }
+
+            .total {
+                background-color: lightgray;
+                border-color: gray;
+            }
+
+            th {
+                font-size: 0.8rem;
+                border-color: gray;
+                background-color: rgb(221, 221, 221);
+                border-style: solid;
+                border-width: 1px;
+                padding: 10px 5px;
+            }
+
+            .blank {
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- HEADER DOCUMENTO -->
+        
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/alagoasbrasao.svg" alt="Brasão do Governo de Alagoas" style="height: 50px;">
+                </td>
+                <td style="width: 80%;">
+                    <p>
+                        <b>Relatório de Fornecedores</b> - CadMERENDA
+                    </p>
+                </td>
+                <td>
+                    <p style="margin-top: 5px; margin-bottom: 10px;">dd/mm/yy hh:mm</p>
+                </td>
+            </tr>
+        </table>
+
+        <!-- REPETE A PARTIR DAQUI -->
+
+        <!-- HEADER FORNECEDOR -->
+        <hr style="margin-top: 20px; margin-bottom: 20px;">
+        <table class="supplier-header">
+            <tr>
+                <td style="border-right: 0; width: 8%;">NOME FANTASIA</td>
+                <td style="border-left: 0;">
+                    <b>Mercadinho LTDA</b>
+                </td>
+                <td style="border-right: 0; width: 3%;">CNPJ</td>
+                <td style="border-left: 0;">
+                    <b>XX. XXX. XXX/0001-XX</b>
+                </td>
+                <td style="border-right: 0; width: 7%;">RESPONSÁVEL</td>
+                <td style="border-left: 0;">
+                    <b>Fulano João Silva Santos</b>
+                </td>
+                <td style="border-right: 0; width: 3%;">TEL</td>
+                <td style="border-left: 0;">
+                    <b>(82) 3333-3333</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-right: 0;">ENDEREÇO</td>
+                <td style="border-left: 0;" colspan="5">
+                    <b>Logradouro, N, Bairro, Município, UF</b>
+                </td>
+                <td style="border-right: 0;">CERTIDÕES</td>
+                <td style="border-left: 0;" colspan="2">
+                    <b>PENDENTES</b>
+                </td>
+            </tr>
+        </table>
+
+        <!-- LISTAGEM -->
+        <table>
+            <thead>
+                <th>ITEM</th>
+                <th>DESCRIÇÃO</th>
+                <th style="width: 3%">UN</th>
+                <th style="width: 7%">PERIODICIDADE</th>
+                <th style="width: 5%">QTD MAX</th>
+                <th style="width: 6%">PREÇO UN</th>
+                <th style="width: 10%">MARCA</th>
+                <th style="width: 10%">PREÇO TOTAL</th>
+            </thead>
+            <tbody class="items">
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Lorem ipsum</td>
+                    <td>KG</td>
+                    <td>SEMANAL</td>
+                    <td>10</td>
+                    <td>R$ 5,00</td>
+                    <td>Tio João</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <!-- TOTAL -->
+                <tr>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <td class="total">TOTAL</td>
+                    <td style="border-left: 0;">
+                        <b>R$ 400,00</b>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- FIM -->
+        
+    </body>
+</html>

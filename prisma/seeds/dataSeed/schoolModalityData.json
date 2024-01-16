@@ -1,0 +1,27 @@
+[
+    {
+        "id": "5001",
+        "school_inep": "27036782",
+        "modality_id": "901"
+    },
+    {
+        "id": "5002",
+        "school_inep": "27036960",
+        "modality_id": "902"
+    },
+    {
+        "id": "5003",
+        "school_inep": "27036731",
+        "modality_id": "903"
+    },
+    {
+        "id": "5004",
+        "school_inep": "27036987",
+        "modality_id": "904"
+    },
+    {
+        "id": "5005",
+        "school_inep": "27026337",
+        "modality_id": "905"
+    }
+]

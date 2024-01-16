@@ -1,0 +1,6 @@
+ao acabar a etapa de pedido do gestor:
+	remover os requested_prodocutsn com quantidades iguais a zero
+
+CRIAR NOVO USUÁRIO TIPO AUDITOR
+
+Começar a preparar o sistema para receber os dados da juceal

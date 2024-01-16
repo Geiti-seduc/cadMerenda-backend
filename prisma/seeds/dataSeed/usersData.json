@@ -1,0 +1,122 @@
+[
+    {
+        "id": "123456",
+        "email": "anderson@teste.com",
+        "name": "Anderson",
+        "password": "$2b$12$qcMzU4/ZakAVf6qjDBCB7uFobVVgIy.i3e14zcFJTleDMsk0x2mu6",
+        "role": "nutricionista",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "1234567",
+        "email": "cris@teste.com",
+        "name": "Cristovao",
+        "password": "$2b$12$qcMzU4/ZakAVf6qjDBCB7uFobVVgIy.i3e14zcFJTleDMsk0x2mu6",
+        "role": "admin-nutri",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "123456789",
+        "email": "erlane@teste.com",
+        "name": "Erlane",
+        "password": "$2b$12$qcMzU4/ZakAVf6qjDBCB7uFobVVgIy.i3e14zcFJTleDMsk0x2mu6",
+        "role": "admin",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "10344544741",
+        "email": "a@a.com",
+        "name": "Gestor da MOREIRA E SILVA",
+        "password": "$2b$12$0W6eEUQPjxonOcpJUywOiuYXp5ENE5opjBdTHMpRpuHHPjgrZAmvC",
+        "role": "gestor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "90344534450",
+        "email": "a2@a2.com",
+        "name": "Gestor 2 da MOREIRA E SILVA",
+        "password": "$2b$12$0W6eEUQPjxonOcpJUywOiuYXp5ENE5opjBdTHMpRpuHHPjgrZAmvC",
+        "role": "gestor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "12489657403",
+        "email": "p@p.com",
+        "name": "Gestor PRINCESA ISABEL",
+        "password": "$2b$12$PTg53KGlItUDUdXFS5s48OpXzhPJEilJSsYlMPt/B9vXLBzSHQLz6",
+        "role": "gestor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "23596552236",
+        "email": "t@t.com",
+        "name": "Gestor TITARA",
+        "password": "$2b$12$6tsVodPYUEx6iR1sgkopu.d0Wg1StIq7m1nQNB4ANxROvcfW1pDke",
+        "role": "gestor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "63296548201",
+        "email": "c@c.com",
+        "name": "Gestor Camerino",
+        "password": "$2b$12$6tsVodPYUEx6iR1sgkopu.d0Wg1StIq7m1nQNB4ANxROvcfW1pDke",
+        "role": "gestor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "63541258877",
+        "email": "floriano@floriano.com",
+        "name": "Gestor Floriano Peixoto",
+        "password": "$2b$12$6tsVodPYUEx6iR1sgkopu.d0Wg1StIq7m1nQNB4ANxROvcfW1pDke",
+        "role": "gestor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "78412044741",
+        "email": "f@f.com",
+        "name": "Fornecedor Assaí Atacadista",
+        "password": "$2b$12$1YIDpcfp1/ZXjB.nAIECPuXRA3NSJ68F7oRjH2AC52opTg/sw4Lgy",
+        "role": "fornecedor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "45123654874",
+        "email": "palato@palato.com",
+        "name": "Fornecedor PALATO",
+        "password": "$2b$12$1YIDpcfp1/ZXjB.nAIECPuXRA3NSJ68F7oRjH2AC52opTg/sw4Lgy",
+        "role": "fornecedor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "69323545125",
+        "email": "g@g.com",
+        "name": "Fornecedor G BARBOSA",
+        "password": "$2b$12$1YIDpcfp1/ZXjB.nAIECPuXRA3NSJ68F7oRjH2AC52opTg/sw4Lgy",
+        "role": "fornecedor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "58721014569",
+        "email": "teste@kkk.com",
+        "name": "FORNECE PRA NINGUÉM",
+        "password": "$2b$12$1YIDpcfp1/ZXjB.nAIECPuXRA3NSJ68F7oRjH2AC52opTg/sw4Lgy",
+        "role": "fornecedor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "10356451302",
+        "email": "user@example.com",
+        "name": "Swagger",
+        "password": "$2b$12$fB2jj1NrlT8uTKL.rtW08.b6mXyHDcVe3jUixcC26./PCUAA4pwZW",
+        "role": "admin-nutri",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    },
+    {
+        "id": "10356451303",
+        "email": "user2@example.com",
+        "name": "Swagger",
+        "password": "$2b$12$fB2jj1NrlT8uTKL.rtW08.b6mXyHDcVe3jUixcC26./PCUAA4pwZW",
+        "role": "fornecedor",
+        "lastLogin": "2024-01-02T13:36:06.172Z"
+    }
+]

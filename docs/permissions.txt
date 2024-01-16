@@ -1,0 +1,58 @@
+Separar a rota default de criação (tirar role do req.body da rota padrão e só deixara para a rota de criação do admin)
+Criar middlewares:
+
+supplier -> get:
+		general_list, general_list_food, food, order, requested_products, school, certificates, address, 
+		offer, offered_products, supplier
+	    getByID:
+                user
+	    post:
+		address, upload, certificates, address, offer, offered_products, supplier
+	    put:
+		user, upload, certificates, address, offer, offered_products, supplier	
+
+nutricionista -> get:
+		    gee, school_modality, modality, school_modality, school, offer, offered_products, order, requested_products 
+		 getByID:
+		    user
+		 full:
+		    food, general_list, general_list_food
+nutri
+gestor -> get:
+	     food, gee, general_list, general_list_food, modality, certificates, school_moldality, offer, offered_products, order, requested_products, school_user, school, supplier,
+	  getByID:
+	      user
+	  post:
+             order, requested_products
+	  put:
+	     order_ requested_products, school, school_modality
+	     
+admin -> get: 
+	     certificates, food, offer, offered_products, order, requested_products, supplier
+	 full:
+	     gee, general_list, modality, school_user, school, user
+
+superAdmin -> Full em tudo
+
+Rota	Get	Get By ID	Post	Put	Full
+Certificates	supplier, gestor		supplier	supplier	
+Food	gestor, nutricionista				nutricionista
+General List	supplier, gestor				nutricionista
+General List Food	supplier, gestor				nutricionista
+Modality	gestor				admin
+Certificates	admin				admin
+School Modality	gestor				gestor
+Offer	supplier, nutricionista, gestor, admin		supplier, nutricionista, gestor	supplier, nutricionista, gestor	admin
+Offered Products	supplier, nutricionista, gestor, admin		supplier, nutricionista, gestor	supplier, nutricionista, gestor	admin
+Order	gestor		supplier, gestor	gestor	admin
+Requested Products	supplier, gestor		supplier, gestor	supplier, gestor	admin
+School User	gestor				admin
+School	supplier, gestor, admin		supplier, gestor, admin	supplier, gestor, admin	admin
+Supplier	supplier, gestor		supplier	supplier	admin
+User	supplier, nutricionista, gestor, admin	supplier, nutricionista, gestor, admin	supplier, nutricionista, gestor, admin	supplier, nutricionista, gestor, admin	admin
+Gee	nutricionista, admin				admin
+
+
+suppllierMid -> So para supplier
+
+admin -> dita quantos fornedores vao ser mostrados, o top(x) 

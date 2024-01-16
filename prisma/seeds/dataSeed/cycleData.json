@@ -1,0 +1,14 @@
+[
+    {
+      "id": "48624",
+      "startNutriOffset": -4,
+      "deadlineNutriOffset": -2,
+      "startSchoolOffset": 0,
+      "deadlineSchoolOffset": 2,
+      "startSupplierOffset": 4,
+      "deadlineSupplierOffset": 6,
+      "initSelectSupplierOffset": 8,
+      "deadlineSelectSupplierOffset": 10
+    }
+  ]
+  

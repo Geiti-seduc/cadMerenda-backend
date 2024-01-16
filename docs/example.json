@@ -1,0 +1,14 @@
+{
+  "cycle_id": "x",
+  "school_inep": "x",
+  "requested_products": [
+    {
+      "food_id": "x",
+      "quantity": "x"
+    },
+    {
+      "food_id": "y",
+      "quantity": "y"
+    }
+  ]
+}

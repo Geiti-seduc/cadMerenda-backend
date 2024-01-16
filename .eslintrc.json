@@ -1,11 +1,15 @@
-// .eslintrc.json
 {
-    "env": {
-      "es2020": true
-    },
-    "extends": "trybe-backend",
-    "rules": {
-      "sonarjs/no-duplicate-string": ["error", 5],
-      "camelcase": "off"
-    }
+  "env": {
+    "es2020": true
+  },
+  "extends": "trybe-backend",
+  "rules": {
+    "sonarjs/no-duplicate-string": ["error", 5],
+    "camelcase": "off",
+    "max-lines": ["error", {
+      "max": 300,
+      "skipBlankLines": true,
+      "skipComments": true
+    }]
   }
+}
